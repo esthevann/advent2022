@@ -37,6 +37,8 @@ impl Jokenpô {
             Jokenpô::Scissors => Jokenpô::Rock,
         }
     }
+    
+    #[allow(clippy::redundant_clone)]
     fn play_match(player: Jokenpô, enemy: Jokenpô) -> u32 {
         let mut score = player.clone() as u32;
 
